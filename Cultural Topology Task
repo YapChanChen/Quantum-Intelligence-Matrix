@@ -1,0 +1,23 @@
+# Cultural Topology Task
+
+def cultural_topology_analysis(task_completion_rate):
+    """
+    Analyze the completion rate of cultural topology tasks.
+
+    Args:
+        task_completion_rate (float): Task completion rate in percentage.
+
+    Returns:
+        str: Feedback on the task performance.
+    """
+    if task_completion_rate > 90:
+        return "Excellent performance! Your cultural topology insights are profound."
+    elif task_completion_rate > 75:
+        return "Good effort! Consider refining your analysis for deeper connections."
+    else:
+        return "Needs improvement. Try focusing on key cultural entanglements."
+
+if __name__ == "__main__":
+    completion_rate = 89  # Example completion rate
+    feedback = cultural_topology_analysis(completion_rate)
+    print(feedback)
